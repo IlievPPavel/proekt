@@ -1,0 +1,27 @@
+{
+  "name": "jsts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "cd backend && ts-node app.ts",
+    "frontend-angular": "cd frontend/angular/users && ng serve",
+    "frontend-react": "cd frontend/react/users && npm start",
+    "frontend-vue": "cd frontend/vue/users && npm run serve",
+    "dev-angular": "concurrently \"npm run server\" \"npm run frontend-angular\"",
+    "dev-react": "concurrently \"npm run server\" \"npm run frontend-react\"",
+    "dev-vue": "concurrently \"npm run server\" \"npm run frontend-vue\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.21",
+    "concurrently": "^6.5.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.15"
+  }
+}
